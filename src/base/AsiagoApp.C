@@ -31,6 +31,7 @@ AsiagoApp::~AsiagoApp()
 {
 }
 
+extern "C" void AsiagoApp__registerApps() { AsiagoApp::registerApps(); }
 void
 AsiagoApp::registerApps()
 {
