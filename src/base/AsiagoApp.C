@@ -13,10 +13,9 @@ InputParameters validParams<AsiagoApp>()
   return params;
 }
 
-AsiagoApp::AsiagoApp(const std::string & name, InputParameters parameters) :
-    MooseApp(name, parameters)
+AsiagoApp::AsiagoApp(InputParameters parameters) :
+    MooseApp(parameters)
 {
-  srand(processor_id());
 
   Moose::registerObjects(_factory);
   ModulesApp::registerObjects(_factory);

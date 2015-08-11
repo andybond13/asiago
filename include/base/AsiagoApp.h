@@ -11,7 +11,7 @@ InputParameters validParams<AsiagoApp>();
 class AsiagoApp : public MooseApp
 {
 public:
-  AsiagoApp(const std::string & name, InputParameters parameters);
+  AsiagoApp(InputParameters parameters);
   virtual ~AsiagoApp();
 
   static void registerApps();
